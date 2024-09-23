@@ -106,6 +106,8 @@ void print_kernel_results(int kernel_number, float awnser, unsigned n_elements, 
   *total_time = total_chrono / ((double)1000 * 1000 * 1000);
   double ops = n_elements / *total_time;
 
+  double mflops = ops / 1e6;
+
   printf("\n========== Report For ");
   if (kernel_number == 0)
     printf("Thrust Version ==========\n");
@@ -116,7 +118,7 @@ void print_kernel_results(int kernel_number, float awnser, unsigned n_elements, 
 
   printf("Max Value Reduced (awnser): %.1f\n", awnser);
   printf("Total Time (seconds): %lf\n", *total_time);
-  printf("Throughput: %.2lf\n", ops);
+  printf("Throughput: %.2lf MFLOPS\n", mflops);
   printf("==================================================\n");
 }
 

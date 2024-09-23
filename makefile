@@ -7,7 +7,7 @@ TARGET = output
 NVCC = nvcc
 
 # Flags de compilação
-NVCCFLAGS = -I /usr/include/c++/10 -I /usr/lib/cuda/include/
+NVCCFLAGS = --std=c++11 -I /usr/include/c++/10 -I /usr/lib/cuda/include/
 
 # Fontes CUDA
 CUFILES = reduce_max.cu
