@@ -1,4 +1,4 @@
-# Reduce On Cuda
+# Reduce on Cuda
 
 This projects is a implementation of an Reduce Algorithm on NVIDIA GPU's, using CUDA, Thrust and C.
 
